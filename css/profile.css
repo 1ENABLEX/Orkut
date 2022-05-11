@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 856px;
+    margin: 0 auto;
+}
+
+/* HEADER START */
+header {
+
+    background: #EC1B90;
+    height: 1.8125em;
+    padding: 5px 0;
+}
+
+header .container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 1.3125em;
+
+}
+
+body {
+    min-height: 100vh;
+    background: #5A5A5B;
+}
+
+.right-btn-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.navega {
+
+    color: #EC1B90;
+}
+
+.right-btn-header button {
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.5625em;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: capitalize;
+    /* height: 16px; */
+    color: #EC1B90;
+
+    padding: 0 10px;
+}
+
+/* HEADER CENTER */
+
+.center-btn-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-left: 7.3125em;
+}
+
+.center-btn-header input {
+    border-radius: 3px;
+
+}
+
+.center-btn-header img {
+    padding-right: 0.375em;
+}
+
+::placeholder {
+    display: flex;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+
+
+    color: rgba(90, 90, 91, 0.28);
+}
+
+
+
+
+.center-btn-header input {
+    width: 9.75em;
+    /* height: 1em; */
+    border: none;
+}
+
+/* HEADER END */
+
+.end-btn-header {
+    display: flex;
+
+}
+
+.end-btn-header>div {
+    display: flex;
+    align-items: center;
+}
+
+.end-btn-header a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.end-btn-header-first {
+    margin-right: 1em;
+
+}
+
+
+
+/* ASIDE ESQUERDA */
+
+
+/* LOGOTIPO */
+
+
+.center-items-area {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+
+}
+
+aside .logoOrkut {
+    width: 94px;
+    height: 28px;
+    align-items: center;
+}
+
+/* FOTO PERFIL */
+aside .profile-foto {
+    border-radius: 115em;
+    height: 98.81px;
+}
+
+aside h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 100px;
+}
+
+.area-foto-perfil {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 8px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.area-foto-perfil img {
+    margin-top: 21px;
+}
+
+.area-foto-perfil p {
+    max-width: 100px;
+    text-align: center;
+}
+
+/* INFORMAÇÕES PERFIL */
+
+.info-profiles {
+    background: #FFFFFF;
+    border-radius: 3px;
+    width: 9em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.875em;
+    padding-left: 6px;
+    padding-bottom: 2.875em;
+}
+
+.on {
+    width: 8px;
+    margin-left: 2px;
+}
+
+.spacing {
+    margin-bottom: 19px;
+}
+
+.notifications {
+    display: flex;
+    align-items: baseline;
+    height: 0.3125em;
+    margin-top: 0.4375em;
+}
+
+
+.space-notifications {
+    padding-top: 1.3125em;
+}
+
+.status {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.5625em;
+    line-height: 7px;
+
+    color: #5A5A5B;
+}
+
+.infoNotifi {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 7px;
+    padding-top: 5px;
+    color: #5A5A5B;
+    padding-left: 3px;
+}
+
+.info-profiles span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 5px;
+    /* identical to box height */
+
+
+    color: #5A5A5B;
+}
+
+.shareArea .firstP {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 7px;
+
+    color: #5A5A5B;
+    display: flex;
+    align-self: center;
+    padding-top: 27px;
+}
+
+.aline {
+    display: flex;
+    align-items: baseline;
+}
+
+aside .spantext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 5px;
+    /* identical to box height */
+
+
+    color: #5A5A5B;
+}
+
+.secoundP {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 5px;
+    /* identical to box height */
+
+
+    color: #5A5A5B;
+    margin-top: 2px;
+}
+
+.linkorkut {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    /* line-height: 5px; */
+    /* identical to box height */
+
+
+    color: #5A5A5B;
+    margin-top: 7px;
+    margin-top: 13px;
+}
+
+.copy {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5px;
+    line-height: 5px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #EC1B90;
+    padding-top: 1px;
+    margin-top: 1px;
+}
+
+.columnCopy {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* SECTION MIDDLE */
+
+.content-middle {
+    width: 100%;
+    max-width: 36.1875em;
+    margin: 0 1.3125em 0 1em;
+}
+
+.widget {
+    align-self: flex-end;
+    max-width: 10.5625em;
+    width: 100%;
+}
+
+/* VISITAS */
+
+.visitas {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.visitas h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 14px;
+    color: #5A5A5B;
+}
+
+.visitas p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #5A5A5B;
+
+}
+
+.visitas img {
+    padding: 9px 0 9px 0;
+}
+
+/* SEGUNDO BLOCO SECTION MIDLE */
+/* PERFIL DA BRUNINHA */
+
+.profile-bruna {
+    margin-top: 11px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.profile-bruna h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 11px 12px 3px 10px;
+    color: #5A5A5B;
+}
+
+.profile-bruna button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+    background: #01AC3B;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    height: 17px;
+
+    margin-top: 10px;
+    padding: 5px 5px 15px 5px;
+}
+
+.title-perfil {
+    display: flex;
+}
+
+.profile-bruna>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #5A5A5B;
+    padding-left: 8px;
+}
+
+/* INFORMAÇÕES BRUNA */
+
+.info-quem h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #AB1469;
+    margin-bottom: 9px;
+    padding-left: 8px;
+}
+
+.infos-status {
+    display: flex;
+}
+
+.info-quem p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+    padding: 3px 20px;
+    width: 98px;
+    font-family: Inter;
+    text-align: left;
+    margin: 4px 7px;
+
+}
+
+.resposta-status-l>p {
+    background: #AB1469;
+    border-radius: 2px;
+}
+
+.resposta-status-r>p {
+    background: #9F9F9F;
+    border-radius: 2px;
+    padding-bottom: 3px;
+}
+
+.quem-bruna {
+    background: #E5E5E5;
+    border-radius: 7px;
+    width: 307px;
+    margin-left: 11px;
+}
+
+.who h4 {
+    margin-left: 190px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #9D9D9D;
+}
+
+.quem-bruna>h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #AB1469;
+
+    padding-left: 20px;
+    margin-top: 9px;
+}
+
+.quem-bruna p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 10px;
+
+    color: #000000;
+    width: 311px;
+    height: 70px;
+}
+
+.quem-bruna img {
+
+    border-radius: 5em;
+    height: 98px;
+    margin-left: 180px;
+    margin-bottom: -80px;
+}
+
+/* AMIGOS EM COMUM */
+
+.amigos-comum h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #5A5A5B;
+
+}
+
+.amigos-comum p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    margin-left: 11px;
+    color: #5A5A5B;
+}
+
+/* interesses-comumm */
+
+.interesses-comum {
+    margin: 5px;
+}
+
+.interesses-comum h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #5A5A5B;
+}
+
+.interesses-comum>div {
+    display: flex;
+}
+
+.gostos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+
+    color: #FFFFFF;
+    margin: 5px;
+}
+
+.gostos p {
+    background: #AB1469;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 3px 17px;
+}
+
+/* DIRETRIZES */
+
+.diretrizes {
+    padding-bottom: 10px;
+}
+
+.diretrizes p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    padding-left: 11px;
+    color: #000000;
+    width: 549px;
+
+}
+
+.diretrizes input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    background: #01AC3B;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 15px;
+    margin-left: 465px;
+    cursor: pointer;
+}
+
+/* Widget */
+
+.famoso-online {
+    display: flex;
+    background: #FFFCFC;
+    border-radius: 4px;
+    padding-bottom: 1px;
+    width: 203px;
+}
+
+.famoso-online .bate-papo-famoso {
+    width: 42.5px;
+    height: 28.12px;
+    margin-top: 5px;
+}
+
+.famoso-online strong {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 8px;
+
+    color: #EC1B90;
+}
+
+.famoso-online .on {
+    width: 8px;
+    height: 8px;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.famoso-online .onOFF {
+    font-size: 7px;
+    line-height: 6px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.ney {
+    margin-bottom: 8px;
+}
+
+.luvade {
+    margin-bottom: 25px;
+}
+
+/* CHAT NEYMAR E BRUNA */
+
+.neymar-bruna {
+    background: #2B2929;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 204px;
+    margin-bottom: -15px;
+}
+
+.neymar-bruna p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 5px 0 8px 0;
+    color: #FFFFFF;
+}
+
+.neymarpergunta {
+    display: flex;
+    background: #474545;
+    border-radius: 5px;
+    width: 181px;
+    margin-bottom: 5px;
+}
+
+.neymarpergunta>img {
+    width: 54.4px;
+    height: 36px;
+    margin-top: 3px;
+}
+
+.neymarpergunta p {
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+
+    color: #FFFFFF;
+}
+
+.icons-batepapo {
+    width: 7px;
+    height: 6px;
+    margin-bottom: 8px;
+}
+
+.bloco-batepapo {
+    height: 20px;
+}
+
+.text-enviar {
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 8px;
+    width: 182px;
+    height: 20px;
+    color: #C4C4C4;
+    border-radius: 4px;
+    margin-bottom: 11px;
+}
+
+.enviar-btn {
+    border: none;
+    cursor: pointer;
+    background: #01AC3B;
+    border-radius: 2px;
+    margin-left: 40px;
+    background: #01AC3B;
+    color: white;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+
+    color: #FFFFFF;
+    padding: 7px 17px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.padding {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.respostaney {
+    width: 103px;
+    height: 22px;
+}
+
+.b-d {
+    margin-left: 90px;
+}
+
+.bruninhafoto {
+    border-radius: 3em;
+    width: 30px;
+    height: 30px;
+}
+
+.respostabruninha {
+    width: 103px;
+    height: 22px;
+}
+
+
+
+@media(min-width:1200px) {
+    main {
+        min-width: 1200px;
+        max-width: 1200px;
+    }
+}

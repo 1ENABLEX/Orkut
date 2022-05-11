@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    background: #5A5A5B;
+    
+}
+
+
+.tela-login {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* INFORMAÇÕES LOGIN */
+
+.info-orkut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;    
+}
+
+.info-orkut-card {
+    width: 13.625em;
+}
+
+section div h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 24px;
+    text-align: start;
+
+    color: #EC1B90;
+}
+
+section div p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 0.9375em;
+
+    color: #FFFFFF;
+}
+
+/* TELA LOGIN */
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFBFB;
+    border-radius: 0.375em;
+    height: 16.0625em;
+    max-height: 100%;
+    
+    
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+}
+
+.form-login .loginsenha {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-align: center;
+    margin-top: 1.0625em;
+    margin-bottom: 1.0625em;
+    color: #000000;
+}
+
+form input {
+    background: #EC1B90;
+    border: none;
+    height: 2.375em;
+    margin: 0 1.4375em 0 1.4375em;
+    border:2px solid #dadada;
+    border-radius:7px;
+}
+
+input:focus { 
+    outline:none;
+    border-color:#AB1469;
+    box-shadow:0 0 10px #AB1469;
+}
+
+.login {
+    padding-bottom: 0.9375em;
+}
+
+.div-btn-acessar {
+    margin-top: 0.9375em;
+    text-align: center;
+
+}
+ /* INPUT-ACESSO */
+#email{
+    color: #FFFFFF;
+    padding-left: 2.1875em;
+    background-image: url(../icons/email.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position-x: 5%;
+}
+
+#password{    
+    color: #ffffff;
+    padding-left: 2.1875em;
+    background-image: url(../icons/password.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position-x: 5%;
+}
+
+.div-btn-acessar {
+    margin-top: 0.9375em;
+    text-align: center;
+
+}
+
+
+.btn-acessar {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #FFFFFF;
+    border: none;
+    background: #909EB7;
+    border-radius: 6px;
+    height: 2.375em;
+    margin: 0 1.4375em 0 1.4375em;
+    padding: 8px 69 12px 85px;
+    width: 18em;
+    padding: 16px 0 24px 0;
+}
+
+
+ /* AREA-LOGIN */
+
+form span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+}
+
+form a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+    text-decoration: none;
+    margin-top: 0.9125em;
+    color: #EC1B90;
+    text-align: center;
+    margin-bottom: 3.08em;
+    padding-bottom: 10px;
+}
+
+.falha-login {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.875em;    
+}
+
+
+/* @Media */
+
+@media (max-width: 600px)
+{
+  .info-orkut
+   {
+    display: none;
+   }
+   .form-login {
+
+       display: flex;
+       margin: center;
+       align-items: center;
+       padding-bottom: 5px;
+       height: 100vh;
+       width: 100vw;
+       border-radius: 0;
+   }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <!--Animated CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Animated CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+ 
+    <title>Orkut - Protótipo</title>
+</head>
+ 
+<body>
+    <main>
+        <div class="tela-login">
+            <!--INFORMAÇÕES LOGIN-->
+            <section class="animate__animated animate__fadeInLeft info-orkut">
+                <div class="info-orkut-card">
+                    <h3>Conecte-se</h3>
+                    <p>aos seus amigos e familiares usando recados e mensagens instantâneas.</p>
+                </div>
+                <div class="info-orkut-card">
+                    <h3>Conheça</h3>
+                    <p>novas pessoas através de amigos de seus amigos e comunidade.</p>
+                </div>
+                <div class="info-orkut-card">
+                    <h3>Comparilhe</h3>
+                    <p>seus vídeos, fotos e paixôes em um só lugar.</p>
+                </div>
+            </section>
+            <!--FORMULÁRIO LOGIN-->
+            <section class=" animate__animated animate__zoomIn form-login">
+                <form action="">
+                    <div class="animate__animated animate__zoomIn logotipo">
+                        <img src="./icons/LogoOrkut.svg" alt="" >
+                    </div>
+                    <p>Acesse o Orkut com sua conta</p>
+                    <div>
+                        <div class="login">                        
+                            <input type="email" name="contas" id="email" required>                            
+                        </div>
+                        <div class="password">
+                            <input type="password" name="contas" id="password" required>    
+                        </div>    
+                    </div>
+                    <div class="div-btn-acessar">
+                        <input class="btn-acessar" type="submit">  
+                    </div>
+                    <div class="falha-login">
+                        <span>Não está conseguindo acessar a sua conta?</span>
+                        <a href="#">Ainda não sou membro, quero me registrar!</a>
+                    </div>        
+                </form>            
+            </section>
+        </div>
+    </main>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBSvedlx33Xffhv8RjN65EVa8UACs_FhPI",
+            authDomain: "login-orkenablex.firebaseapp.com",
+            projectId: "login-orkenablex",
+            storageBucket: "login-orkenablex.appspot.com",
+            messagingSenderId: "1018057989079",
+            appId: "1:1018057989079:web:4f5eb6784ec82b30278992",
+            measurementId: "G-BK2KJ6YHB6"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+
+
+        const provider = new firebase.auth.GoogleAuthProvider();
+
+        const db = firebase.firestore();
+
+        setTimeout(function(){
+            window.alert('Tentei utilizar FireBase')
+            window.alert('A proxima janela ira pedir para logar com Google')
+            window.alert('Caso logado, não será necessário o "cadastro" do usuário.')
+            window.alert('Não é necessário logar com o Google!')
+             auth.signInWithPopup(provider);            
+        }, 3330)
+
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+             let contas = document.querySelector('[name=contas').value;
+             db.collection('contas').add({
+                 contas: contas
+            
+           
+            })
+            alert('Cadastrado com sucesso!');
+            window.location.href="/pages/feed.html"
+        });
+
+        auth.onAuthStateChanged((val)=>{
+                if(val){                    
+                     alert('Logado com Sucesso! '+val.displayName);
+                    console.log(val);
+                    window.location.href="/pages/feed.html"
+                }else{
+                    
+
+                };
+        })
+        
+    
+
+        
+
+        
+
+
+
+
+      </script>
+      
+</body>
+ 
+</html>
