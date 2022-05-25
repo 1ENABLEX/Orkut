@@ -123,14 +123,14 @@
            
             })
             alert('Cadastrado com sucesso!');
-            window.location.href="/pages/feed.html"
+            window.location.href="pages/feed.html"
         });
 
         auth.onAuthStateChanged((val)=>{
                 if(val){                    
                      alert('Logado com Sucesso! '+val.displayName);
                     console.log(val);
-                    window.location.href="/pages/feed.html"
+                    window.location.href="pages/feed.html"
                 }else{
                     
 
